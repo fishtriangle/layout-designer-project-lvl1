@@ -1,6 +1,55 @@
 /* CSS Document */
 .site_font {
+	color: #303846;
+	
 	font-family: sans-serif;
 	font-size: 16px;
+	color: #303846;
+}
+.header_position {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.back_white {
+	background-color: white;
+}
+.list_visual {
+	list-style: none;
+}
+.logo_size {
+	height: 50px;
+	width: 50px;
+}
+.element_flex {
+	display: flex;
+}
+.direction_row {
+	flex-direction: row;
+}
+.direction_column {
+	flex-direction: column;
+}
+.align_center {
+	align-items: center;
+}
+.font_bold {
+	font-weight: bold;
+}
+.font_header {
+	font-size: 1.5em;
+}
+.margin_10 {
+	margin: 10px;
+}
+.marginright_20 {
+	margin-right: 20px;
+}
+.element_spacebetween {
+	justify-content: space-between;
+}
+.notlink_decoration {
+	text-decoration: none;
 	color: #303846;
 }
