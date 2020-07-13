@@ -1,2 +1,6 @@
 /* CSS Document */
-
+.site_font {
+	font-family: sans-serif;
+	font-size: 16px;
+	color: #303846;
+}
