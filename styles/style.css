@@ -4,23 +4,38 @@
 	
 	font-family: sans-serif;
 	font-size: 16px;
-	color: #303846;
 }
-.header_position {
+.fixed_position {
 	position: fixed;
+}
+.width_100 {
+	width: 100%;
+}
+.zero_position {
 	top: 0;
 	left: 0;
-	width: 100%;
+	padding: 0px;
+	margin: 0px;
 }
 .back_white {
 	background-color: white;
 }
+.text_white {
+	color: white;
+}
+.font_40 {
+	font-size: 40px;
+}
 .list_visual {
 	list-style: none;
 }
-.logo_size {
+.logo_header {
 	height: 50px;
 	width: 50px;
+}
+.logo_banner {
+	height: 150px;
+	width: 150px;
 }
 .element_flex {
 	display: flex;
@@ -52,4 +67,50 @@
 .notlink_decoration {
 	text-decoration: none;
 	color: #303846;
+}
+.margintop_50 {
+	margin-top: 50px;
+}
+.height_400 {
+	height: 400px;
+	min-height: 400px;
+}
+.relative_position {
+	position: relative;
+}
+.absolute_position {
+	position: absolute;
+}
+.no_overflow{
+	overflow: hidden;	
+}
+.marginnottop_135 {
+	margin-top: -135px;
+}
+.width_auto {
+	 width: auto;
+}
+.center_position {
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.novertical_scaling {
+	min-width: 1300px;
+}
+.button_decor {
+	display: inline-block;
+	padding: 10px;
+	text-decoration: none;
+	border: 2px solid white;
+	border-radius: 5px;
+	color: white;
+}
+.content_evenly {
+	justify-content: space-evenly;
+	align-items: center;
+}
+.button_decor:hover {
+	color: skyblue;
+	border-color: skyblue;
 }
