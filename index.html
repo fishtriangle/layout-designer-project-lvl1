@@ -9,38 +9,74 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body class="site_font element_flex direction_column zero_position">
-	<header class="zero_position back_white element_flex direction_row element_spacebetween width_100 zero_position">
+	<header class="zero_position back_white element_flex direction_row element_spacebetween width_100 fixed_position above_all">
 		<div class="element_flex direction_row align_center">
 			<img src="images/logo.svg" class="margin_10 marginright_20 logo_header" alt="logo">
 			<span class="font_bold">Лунное море</span>
 		</div>
-		<nav class="element_flex align_center">
+		<nav class="element_flex align_center marginright_20">
 			<ul class="element_flex list_visual direction_row">
-				<li><span class="font_bold margin_10"><a href="" class="notlink_decoration">Преимущества</a></span></li>
-				<li><span class="font_bold margin_10"><a href="" class="notlink_decoration">О ЖК</a></span></li>
-				<li><span class="font_bold margin_10"><a href="" class="notlink_decoration">Места для отдыха</a></span></li>
+				<li><span class="font_bold margin_10"><a href="#advantages" class="notlink_decoration hover_grey">Преимущества</a></span></li>
+				<li><span class="font_bold margin_10"><a href="#about" class="notlink_decoration hover_grey">О ЖК</a></span></li>
+				<li><span class="font_bold margin_10"><a href="#places_for_rest" class="notlink_decoration hover_grey">Места для отдыха</a></span></li>
 			</ul>
 		</nav>
 	</header>
-	<main class="">
-		<div class="">
-			<div class="relative_position height_400 no_overflow element_flex align_center width_auto">
-				<img src="images/banner.png" alt="space_image" class="width_100 absolute_position marginnottop_135 novertical_scaling center_position">
-				<div class="absolute_position center_position text_white element_flex width_100 height_400 direction_column content_evenly">
-					<img src="images/logo.svg" alt="logo" class="logo_banner">
-					<div class="element_flex direction_column content_evenly">
-						<span class="font_40 font_bold">ЖК «Лунное море»</span>
-						<br>
-						<span class="font_bold">Место, откуда не хочется улетать</span>
-					</div>
-					<div class="">
-							<a href="" class="button_decor font_bold">Забронировать</a>
-					</div>
+	<main class="margintop_70">
+		<div class="relative_position height_400 no_overflow element_flex align_center width_auto">
+			<img src="images/banner.png" alt="space_image" class="width_100 absolute_position marginnottop_135 novertical_scaling center_position order_1">
+			<div class="absolute_position center_position text_white element_flex width_100 height_400 direction_column content_evenly">
+				<img src="images/logo.svg" alt="logo" class="logo_banner">
+				<div class="element_flex direction_column content_evenly">
+					<span class="font_40 font_bold lineheight_05">ЖК «Лунное море»</span>
+					<br>
+					<span class="font_bold lineheight_05">Место, откуда не хочется улетать</span>
+				</div>
+				<div class="">
+					<a href="" class="button_decor font_bold">Забронировать</a>
 				</div>
 			</div>
-			
 		</div>
-		<p>Main</p>
+		<section class="width_100 element_flex content_center" id="advantages">
+			<div class="element_flex direction_row margin_50 three_block">
+				<div class="small_block">
+					<h2>Уникальный вид</h2>
+					<p>Вид на космос из вашего окна. Мы построили дома с большими окнами, чтобы вы могли наслаждаться метеоритными потоками.</p>
+				</div>
+				<div class="small_block">
+					<h2>Инфраструктура</h2>
+					<p>Прекрасные дороги рядом с домом. Много мест для прогулки. Всего в 200 км. от посёлка находится кольцо гор Кордильеры, на которых вы сможете провести незабываемые выходные.</p>
+				</div>
+				<div class="small_block">
+					<h2>Близость к Москве</h2>
+					<p>При небольшой цене мы располагаемся близко к МКАД. Всего 384 000 километров и вы в самом сердце России.</p>
+				</div>
+			</div>
+		</section>
+		<section class="width_100 element_flex content_center backgr_lightgrey" id="about">
+			<div class="element_flex direction_row margin_50 align_top two_block">
+				<div class="big_block">
+					<h2 class="lineheight_05">О ЖК «Лунное море»</h2>
+					<p>Все чаще жители Москвы предпочитают загородный дом городской квартире, к тому же связь с мегаполисом не теряется – современные скоростные трассы позволяют без труда добираться до столицы и обратно.</p>
+					<p>Мы построили наши дома на самом близком к Солнцу спутнике, всего в 380 тысяч километров от Земли.</p>
+				</div>
+				<div class="relative_position small_image margintop_15">
+					<img src="images/moon-1.jpg" alt="moon_photo" class="small_image">
+				</div>
+			</div>
+		</section>
+		<section class="width_100 element_flex content_center" id="places_for_rest">
+			<div class="element_flex direction_row margin_50 align_top two_block">
+				<div class="relative_position small_image margintop_15">
+					<img src="images/moon-2.jpg" alt="moon_photo" class="small_image">
+				</div>
+				<div class="big_block">
+					<h2 class="lineheight_05">Места для отдыха</h2>
+					<p>Луна обладает всеми условиями для комфортного отдыха от большого города. В вашем распоряжении 22 моря и 18 гор. Самое ближайшее кольцо гор всего в 200 километров от вашей квартиры.</p>
+					<p>Дома располагаются в новом районе «Лунные моря». При необходимости есть автобусы до района «Лунный материк».</p>
+				</div>				
+			</div>
+		</section>
 	</main>
 	<footer>
 		<p>Footer</p>
