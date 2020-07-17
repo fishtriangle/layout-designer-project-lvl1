@@ -10,7 +10,7 @@
 </head>
 <body class="site_font element_flex direction_column zero_position">
 	<header class="zero_position back_white element_flex direction_row element_spacebetween width_100 fixed_position above_all">
-		<div class="element_flex direction_row align_center">
+		<div class="element_flex direction_row align_center ">
 			<img src="images/logo.svg" class="margin_10 marginright_20 logo_header" alt="logo">
 			<span class="font_bold">Лунное море</span>
 		</div>
@@ -33,7 +33,7 @@
 					<span class="font_bold lineheight_05">Место, откуда не хочется улетать</span>
 				</div>
 				<div class="">
-					<a href="" class="button_decor font_bold">Забронировать</a>
+					<a href="#send_form" class="button_decor font_bold white_decor">Забронировать</a>
 				</div>
 			</div>
 		</div>
@@ -60,15 +60,15 @@
 					<p>Все чаще жители Москвы предпочитают загородный дом городской квартире, к тому же связь с мегаполисом не теряется – современные скоростные трассы позволяют без труда добираться до столицы и обратно.</p>
 					<p>Мы построили наши дома на самом близком к Солнцу спутнике, всего в 380 тысяч километров от Земли.</p>
 				</div>
-				<div class="relative_position small_image margintop_15">
+				<div class="relative_position small_image margintop_15 padding_left_10">
 					<img src="images/moon-1.jpg" alt="moon_photo" class="small_image">
 				</div>
 			</div>
 		</section>
 		<section class="width_100 element_flex content_center" id="places_for_rest">
 			<div class="element_flex direction_row margin_50 align_top two_block">
-				<div class="relative_position small_image margintop_15">
-					<img src="images/moon-2.jpg" alt="moon_photo" class="small_image">
+				<div class="relative_position small_image margintop_15 padding_right_10">
+					<img src="images/moon-2.jpg" alt="astonaut_photo" class="small_image">
 				</div>
 				<div class="big_block">
 					<h2 class="lineheight_05">Места для отдыха</h2>
@@ -77,6 +77,48 @@
 				</div>				
 			</div>
 		</section>
+		<div class="width_100 element_flex backgr_lightgrey padding_50 direction_column align_center" id="send_form">
+			<h2 class="margin_top_0">Оставьте заявку сегодня!</h2>
+		  	<form>
+				<fieldset class="green_decor font_bold">
+					<legend>Параметры квартиры</legend>
+					<div class="site_font medium_block element_flex content_between margin_10">
+						<label class="font_bold">Количество комнат:</label>
+						<select name="qty_rooms" class="select_size">
+							<option value="1 room">1</option>
+							<option value="2 rooms">2</option>
+							<option value="3 rooms">3</option>
+						</select>
+					</div>
+					<div class="site_font element_flex content_between margin_10 medium_block">
+						<label class="font_bold">Отделка:</label>
+						<select name="comfort_lvl" class="select_size">
+							<option value="Zero comfort">Без отделки</option>
+							<option value="A little comfort">Косметический ремонт</option>
+							<option value="WOW">Мебелировано</option>
+						</select>
+					</div>
+				</fieldset>
+				<br>
+				<fieldset class="green_decor font_bold">
+					<legend>Контактная информация</legend>
+					<div class="site_font element_flex content_between margin_10 medium_block padding_1">
+						<label class="font_bold">Имя:</label>
+						<input type="text" name="client_name" class="textblock_size">
+					</div>
+					<div class="site_font element_flex content_between margin_10 medium_block padding_1">
+						<label class="font_bold">Телефон:</label>
+						<input type="tel" name="client_phone" class="textblock_size">
+					</div>
+					<div class="site_font element_flex content_between margin_10 medium_block padding_1">
+						<label class="font_bold">E-mail:</label>
+						<input type="email" name="client_email" class="textblock_size">
+					</div>
+				</fieldset>
+				<br>
+				<button type="submit" class="button_decor green_decor font_bold margin_1">Отправить</button>
+			</form>
+		</div>
 	</main>
 	<footer>
 		<p>Footer</p>
