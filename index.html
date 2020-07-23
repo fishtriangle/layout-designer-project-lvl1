@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 	
-<body class="site_font direction_column zero_position">
-	<header class="backgr_white direction_row width_100 header_position content_between">
-		<div class="direction_row align_center margin_10">
-			<img src="images/logo.svg" class="margin_right_20 logo_header_size" alt="logo">
+<body class="site_font margin_padding_0">
+	<header class="header_position header">
+		<div class="direction_row align_center">
+			<img src="images/logo.svg" class="margin_right_10 logo_header_size" alt="logo">
 			<span class="font_bold">Лунное море</span>
 		</div>
-		<nav class="align_center margin_right_20">
+		<nav class="align_center margin_right_10">
 			<ul class="not_list_style direction_row">
 				<li><span class="margin_10"><a href="#advantages" class="not_link_decoration hover_grey site_font font_bold">Преимущества</a></span></li>
 				<li><span class="margin_10"><a href="#about" class="not_link_decoration hover_grey site_font font_bold">О ЖК</a></span></li>
@@ -24,22 +24,21 @@
 		</nav>
 	</header>
 	<main class="margin_top_70">
-		<div class="relative_position height_400 no_overflow align_center width_auto">
-			<img src="images/banner.png" alt="space_image" class="width_100 absolute_position center_position banner_position">
-			<div class="absolute_position center_position text_white width_100 height_400 direction_column content_evenly">
-				<img src="images/logo.svg" alt="logo" class="logo_banner_size">
-				<div class="direction_column content_evenly">
+		<div class="height_min_300 align_center width_auto backgr_banner content_center padding_50">
+			<div class="text_white direction_column content_evenly align_center">
+				<img src="images/logo.svg" alt="logo" class="logo_banner_size margin_25">
+				<div class="direction_column content_evenly align_center">
 					<span class="font_40 font_bold lineheight_05">ЖК «Лунное море»</span>
 					<br>
 					<span class="font_bold lineheight_05">Место, откуда не хочется улетать</span>
 				</div>
-				<div class="">
-					<a href="#send_form" class="button_decor font_bold text_white border_white">Забронировать</a>
+				<div>
+					<a href="#send_form" class="button_decor font_bold text_white border_white margin_top_70">Забронировать</a>
 				</div>
 			</div>
 		</div>
-		<section class="width_100 content_center" id="advantages">
-			<div class="direction_row margin_50 three_block_size content_between">
+		<section class="content_center" id="advantages">
+			<div class="content_between container">
 				<div class="small_block_size">
 					<h2>Уникальный вид</h2>
 					<p>Вид на космос из вашего окна. Мы построили дома с большими окнами, чтобы вы могли наслаждаться метеоритными потоками.</p>
@@ -54,21 +53,21 @@
 				</div>
 			</div>
 		</section>
-		<section class="width_100 content_center backgr_lightgrey" id="about">
-			<div class="direction_row margin_50 align_top two_block_size content_between">
+		<section class="content_center backgr_lightgrey" id="about">
+			<div class="content_evenly container">
 				<div class="big_block_size">
 					<h2 class="lineheight_05">О ЖК «Лунное море»</h2>
 					<p>Все чаще жители Москвы предпочитают загородный дом городской квартире, к тому же связь с мегаполисом не теряется – современные скоростные трассы позволяют без труда добираться до столицы и обратно.</p>
 					<p>Мы построили наши дома на самом близком к Солнцу спутнике, всего в 380 тысяч километров от Земли.</p>
 				</div>
-				<div class="relative_position small_image_size margin_top_15 padding_left_10">
+				<div class="small_image_size margin_top_15 padding_left_10">
 					<img src="images/moon-1.jpg" alt="moon_photo" class="small_image_size">
 				</div>
 			</div>
 		</section>
-		<section class="width_100 content_center" id="places_for_rest">
-			<div class="direction_row margin_50 align_top two_block_size content_between">
-				<div class="relative_position small_image_size margin_top_15 padding_right_10">
+		<section class="content_center" id="places_for_rest">
+			<div class="content_evenly container">
+				<div class="small_image_size margin_top_15 padding_right_10">
 					<img src="images/moon-2.jpg" alt="astonaut_photo" class="small_image_size">
 				</div>
 				<div class="big_block_size">
@@ -78,7 +77,7 @@
 				</div>				
 			</div>
 		</section>
-		<div class="width_100 backgr_lightgrey padding_top_bottom_50 direction_column align_center" id="send_form">
+		<div class="backgr_lightgrey padding_top_bottom_50 direction_column align_center" id="send_form">
 			<h2 class="margin_top_0">Оставьте заявку сегодня!</h2>
 		  	<form>
 				<fieldset class="green_decor font_bold">
@@ -105,15 +104,15 @@
 					<legend>Контактная информация</legend>
 					<div class="site_font content_between margin_10 medium_block_size padding_1">
 						<label class="font_bold">Имя:</label>
-						<input type="text" name="client_name" class="textblock_size">
+						<input type="text" name="client_name" class="text_block_size">
 					</div>
 					<div class="site_font content_between margin_10 medium_block_size padding_1">
 						<label class="font_bold">Телефон:</label>
-						<input type="tel" name="client_phone" class="textblock_size">
+						<input type="tel" name="client_phone" class="text_block_size">
 					</div>
 					<div class="site_font content_between margin_10 medium_block_size padding_1">
 						<label class="font_bold">E-mail:</label>
-						<input type="email" name="client_email" class="textblock_size">
+						<input type="email" name="client_email" class="text_block_size">
 					</div>
 				</fieldset>
 				<br>
@@ -121,17 +120,16 @@
 			</form>
 		</div>
 	</main>
-	<footer class="width_100 content_center backgr_darkgrey text_white">
-		<div class="direction_row margin_50 footer_block_size content_between align_center">
-			<div class="small_block_size direction_column align_center">
-				<div>
-					<div class="direction_row align_center ">
-						<img src="images/logo.svg" class="margin_right_20 logo_header_size" alt="logo">
-						<span class="font_bold">Лунное море</span>
-					</div>
-					<p>&copy; 2032 год</p>
+	<footer class="footer">
+		<div class="small_block_size direction_column align_center">
+			<div>
+				<div class="direction_row align_center">
+					<img src="images/logo.svg" class="margin_right_10 logo_header_size" alt="logo">
+					<span class="font_bold">Лунное море</span>
 				</div>
+				<p>&copy; 2032 год</p>
 			</div>
+		</div>
 			<div class="small_block_size direction_column align_center">
 				<div>
 					<h3>Проектная документация</h3>
@@ -150,7 +148,7 @@
 					</ul>
 				</div>
 			</div>
-		</div>
+		
 	</footer>
 </body>
 </html>
