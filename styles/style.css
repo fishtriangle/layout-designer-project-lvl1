@@ -1,5 +1,9 @@
 /* CSS Document */
-.header_position {
+:root {
+	--header-height-size: 90px;
+}
+
+.header-position {
 	position: fixed;
 	z-index: 100;
 	
@@ -9,115 +13,124 @@
 	padding: 0px;
 	margin: 0px;
 }
-.center_position {
+.center-position {
 	left: 50%;
 	top: 50%;
 	
 	transform: translate(-50%, -50%);
 }
 
-.logo_header_size {
+.logo-header-size {
 	height: 50px;
 	width: 50px;
 }
-.logo_banner_size {
+.logo-main-size {
 	height: 150px;
 	width: 150px;
 }
-.small_block_size {
+.small-block-size {
 	width: 300px;
 }
-.big_block_size {
+.big-block-size {
 	width: 500px;
 }
-.medium_block_size {
+.medium-block-size {
 	width: 400px;
 }
-.select_size {
+.select-size {
 	width: 150px;
 	margin-right: 50px;
 }
-.text_block_size {
+.text-block-size {
 	width: 200px;
 }
-.small_image_size {
+.small-image-size {
 	width: 250px;
 	height: auto;
 }
-.width_auto {
+.width-auto {
 	 width: auto;
 }
-.height_min_300 {
+.height-min-300 {
 	min-height: 300px;
 }
 
-.direction_row {
+.direction-row {
 	display: flex;
 	flex-direction: row;
 }
-.direction_column {
+.direction-column {
 	display: flex;
 	flex-direction: column;
 }
-.align_center {
+.align-center {
 	display: flex;
 	align-items: center;
 }
-.content_evenly {
+.align-right {
+	display: flex;
+	align-items:flex-end;	
+}
+.aling-left {
+	display: flex;
+	align-items:flex-start;
+}
+.content-evenly {
 	display: flex;
 	justify-content: space-evenly;
 }
-.content_center {
+.content-center {
 	display: flex;
 	justify-content: center;
 }
-.content_between {
+.content-between {
 	display: flex;
 	justify-content: space-between;
 }
 
-.margin_padding_0 {
+.margin-padding-0 {
 	margin: 0px;
 	padding: 0px;
 }
-.margin_10 {
+.margin-10 {
 	margin: 10px;
 }
-.margin_25 {
+.margin-25 {
 	margin: 25px;
 }
-.margin_right_10 {
+.margin-right-10 {
 	margin-right: 10px;
 }
-.margin_right_100 {
+.margin-right-100 {
 	margin-right: 100px;
 }
-.margin_top_70 {
-	margin-top: 70px;
+.main_margin {
+	margin-top: var(--header-height-size);
 }
-.margin_top_15 {
+.margin-top-15 {
 	margin-top: 15px;
 }
-.margin_1 {
+.margin-1 {
 	margin: 1px;
 }
-.margin_top_0 {
+.margin-top-0 {
 	margin-top: 0;
 }
-.padding_top_bottom_50 {
-	padding: 50px 0px;
+.margin-bottom-50 {
+	margin-bottom: 50px;
 }
-.padding_right_10 {
+
+.padding-right-10 {
 	padding-right: 10px;
 }
-.padding_left_10 {
+.padding-left-10 {
 	padding-left: 10px;
 }
-.padding_50 {
+.padding-50 {
 	padding: 50px;
 }
 
-.site_font {
+.site-font {
 	line-height:1.5; 
 	
 	font-family: sans-serif;
@@ -127,49 +140,42 @@
 	
 	color: #303846;
 }
-.font_bold {
+.font-bold {
 	font-weight: bold;
 }
-.font_40 {
+.font-40 {
 	font-size: 40px;
 }
-.lineheight_05 {
+.lineheight-05 {
 	line-height: 0.5;
 }
 
-.button_decor {
-	display: inline-block;
-
-	padding: 5px 15px;
-	
-		
-	border: 1px solid;
-	border-radius: 5px;
-		
-	text-decoration: none;
-}
-.button_decor:hover {
+.btn:hover {
 	color: skyblue;
 	border-color: skyblue;
 }
-.border_white {
+.border-white {
 	border-color: white;
 }
-.green_decor {
+.green-decor {
 	color: #00D099;
 	border-color: #00D099;	
 }
-.text_white {
+.white-decor {
+	color: white;
+	border-color: white;
+}
+.text-white {
 	color: white;
 }
-.hover_grey:hover {
+.hover-grey:hover {
 	color: grey;
 }
-.backgr_lightgrey {
+.backgr-lightgrey {
 	background-color: #f7f7f7;
 }
-.backgr_banner {
-	background-image: url("../images/banner.png");
+.backgr-big-picture {
+	background-image: url("../images/big-picture.png");
 	background-position: 50% 65%;
 }
 
@@ -179,8 +185,9 @@
 	justify-content: space-between;
 	
 	width: 100%;
+	height: var(--header-height-size);
 	
-	padding: 10px;
+	padding: 0px 10px;
 	
 	background-color: white;
 }
@@ -191,22 +198,35 @@
 	flex-direction: row;
 	align-items: flex-start;
 	
-	margin: 50px;
+	padding: 50px 0px;
 }
 .footer {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
 	
-	padding: 50px;
+	padding: 50px 0px;
 	
 	background-color: #303846;
 	color: white;
 }
+.btn {
+	display: inline-block;
 
-.not_list_style {
+	padding: 5px 15px;
+	margin: 5px;
+	
+	
+	border: 1px solid;
+	border-radius: 5px;
+		
+	font-weight: bold;	
+	text-decoration: none;
+}
+
+.not-list-style {
 	list-style: none;
 }
-.not_link_decoration {
+.not-link-decoration {
 	text-decoration: none;
 }
