@@ -1,6 +1,6 @@
 /* CSS Document */
 :root {
-	--header-height-size: 90px;
+	--header-height-size: 70px;
 }
 
 .header-position {
@@ -9,9 +9,6 @@
 	
 	top: 0;
 	left: 0;
-	
-	padding: 0px;
-	margin: 0px;
 }
 .center-position {
 	left: 50%;
@@ -28,63 +25,55 @@
 	height: 150px;
 	width: 150px;
 }
-.small-block-size {
+.width-200 {
+	width: 200px;
+}
+.width-300 {
 	width: 300px;
 }
-.big-block-size {
-	width: 500px;
-}
-.medium-block-size {
+.width-400 {
 	width: 400px;
+}
+.width-500 {
+	width: 500px;
 }
 .select-size {
 	width: 150px;
 	margin-right: 50px;
 }
-.text-block-size {
-	width: 200px;
-}
 .small-image-size {
 	width: 250px;
 	height: auto;
-}
-.width-auto {
-	 width: auto;
 }
 .height-min-300 {
 	min-height: 300px;
 }
 
-.direction-row {
+.display-flex {
 	display: flex;
+}
+.direction-row {
 	flex-direction: row;
 }
 .direction-column {
-	display: flex;
 	flex-direction: column;
 }
 .align-center {
-	display: flex;
 	align-items: center;
 }
 .align-right {
-	display: flex;
 	align-items:flex-end;	
 }
 .aling-left {
-	display: flex;
 	align-items:flex-start;
 }
 .content-evenly {
-	display: flex;
 	justify-content: space-evenly;
 }
 .content-center {
-	display: flex;
 	justify-content: center;
 }
 .content-between {
-	display: flex;
 	justify-content: space-between;
 }
 
@@ -95,39 +84,32 @@
 .margin-10 {
 	margin: 10px;
 }
-.margin-25 {
-	margin: 25px;
-}
 .margin-right-10 {
 	margin-right: 10px;
 }
-.margin-right-100 {
-	margin-right: 100px;
+.margin-right-20 {
+	margin-right: 20px;
 }
 .main_margin {
 	margin-top: var(--header-height-size);
 }
+.margin-top-0 {
+	margin-top: 0;
+}
 .margin-top-15 {
 	margin-top: 15px;
 }
-.margin-1 {
-	margin: 1px;
-}
-.margin-top-0 {
-	margin-top: 0;
+.margin-bottom-25 {
+	margin-bottom: 25px;
 }
 .margin-bottom-50 {
 	margin-bottom: 50px;
 }
-
 .padding-right-10 {
 	padding-right: 10px;
 }
 .padding-left-10 {
 	padding-left: 10px;
-}
-.padding-50 {
-	padding: 50px;
 }
 
 .site-font {
@@ -179,6 +161,10 @@
 	background-position: 50% 65%;
 }
 
+.section-paddings {
+	box-sizing: border-box;
+	padding: 50px;	
+}
 .header {
 	display: flex;
 	flex-direction: row;
@@ -187,18 +173,16 @@
 	width: 100%;
 	height: var(--header-height-size);
 	
-	padding: 0px 10px;
+	box-sizing: border-box;
+	padding: 10px 30px;
 	
 	background-color: white;
 }
 .container {
-	width: 1000px;
-
 	display: flex;
-	flex-direction: row;
+	flex-flow: row wrap;
 	align-items: flex-start;
-	
-	padding: 50px 0px;
+	flex-basis: 1000px;
 }
 .footer {
 	display: flex;
@@ -214,8 +198,7 @@
 	display: inline-block;
 
 	padding: 5px 15px;
-	margin: 5px;
-	
+	margin: 0px 2px;
 	
 	border: 1px solid;
 	border-radius: 5px;
